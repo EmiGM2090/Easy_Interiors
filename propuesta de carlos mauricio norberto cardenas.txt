@@ -1,0 +1,4 @@
+Descripcción del proyecto.
+
+El proyecto va dirigido a las personas que estan interesadas en diseñar su casa desde 0 y quieran empezar a llenar su casa con muebles
+y también mostrarles diseños para que se den una idea de como se puede quedar o en que parte pueden quedar los muebles de las casas recientes que se están diseñando. 
