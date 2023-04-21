@@ -1,3 +1,9 @@
 ¿Como se actuliza el proyecto local?
   git fetch origin main
   git merge origin/main
+
+¿Como subir cambios a mi rama desde git bash?
+  git status
+  git add
+  git commit -m ""
+  git push
