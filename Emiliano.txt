@@ -9,7 +9,6 @@ Actualizar mi rama con la principal
 git fetch origin main
 git merge origin/main
 
-Modifico, añado o elimino
 
 Como subir cambios de mi rama desde git Bash
 
@@ -17,3 +16,4 @@ git status
 git add .
 git commit -m "Mensaje"
 git push
+

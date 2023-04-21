@@ -1,0 +1,6 @@
+estos comandos se hacen antes de el add y commit 
+son para actualizar mi version de proyecto
+
+
+fetch origin main
+fetch origin/main
