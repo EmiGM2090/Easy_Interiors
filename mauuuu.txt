@@ -1,3 +1,10 @@
 ¿cómo actualizar el proyecto local?
 git fetch origin main
 git merge origin/main
+
+
+¿cómo subir cambios a mi rama?
+git status
+git add
+git commit -m "mensaje"
+git push
