@@ -8,3 +8,26 @@ git status
 git add
 git commit -m "mensaje"
 git push
+
+#1
+Actualizar proyecto local desde mi rama..
+git fetch
+git merge
+
+#2
+modifico, añadio o elimino.
+
+#3
+Actulizar mi rama con la principal..
+git fetch orgin main
+git merge origin/main
+
+#4
+Subir cambios con mim rama desde big bash..
+git status
+git add .
+git commit -m "mensaje"
+git push
+
+#5
+pull request
