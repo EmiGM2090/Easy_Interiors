@@ -1,4 +1,7 @@
-Actualizar proyecto local:
+Actualizar proyecto local desde mi rama:
+git fetch
+git merge
+Actualizar mi rama con la principal:
 git fetch origin main
 git merge origin/main
 
@@ -8,3 +11,5 @@ git status
 git add .
 git commit -m "mensaje"
 git push
+
+contribuir con mis cambios a mi rama
