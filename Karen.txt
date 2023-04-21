@@ -11,3 +11,5 @@ git status
 git add .
 git commit -m "mensaje"
 git push
+
+contribuir con mis cambios a mi rama
