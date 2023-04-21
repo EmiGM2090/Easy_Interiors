@@ -1,0 +1,109 @@
+  Scanner numeros = new Scanner(System.in);
+
+        int Vcontrol;
+
+        double n1,n2;
+        System.out.println("Ingrese dos numeros");
+        n1 = numeros.nextDouble();
+        n2 = numeros.nextDouble();
+
+        System.out.println("Qué quieres hacer hoy?");
+        System.out.println("1. Sumar");
+        System.out.println("2. Restar");
+        System.out.println("3. Multiplicar");
+        System.out.println("4. Dividir");
+        System.out.println("5. Numero Mayor");
+        System.out.println("6. Numero menor");
+        System.out.println("7. Residuo");
+        Vcontrol = numeros.nextInt();
+
+        switch (Vcontrol){
+            case 1:
+                System.out.println("Escogiste la suma");
+                double suma = SumaDosNumeros(n1,n2);
+                System.out.println("Suma igual a: "+suma);
+                break;
+            case 2:
+                System.out.println("Escogiste la resta");
+                double result = RestaNum(n1,n2);
+                System.out.println("Resta igual a: "+result);
+                break;
+            case 3:
+                System.out.println("Escogiste la multiplicacion");
+                double multi = Mult(n1,n2);
+                System.out.println("Multiplicación es: "+multi);
+                break;
+            case 4:
+                System.out.println("Escogiste la division");
+                double div = Div(n1,n2);
+                System.out.println("Division es : "+div);
+                break;
+            case 5:
+                System.out.println("Escogiste el numero mayor");
+                double nm = NM(n1,n2);
+                System.out.println("El numero mayor es: "+nm);
+                break;
+            case 6:
+                System.out.println("Escogiste el numero menor");
+                double nmenor = nmenor(n1,n2);
+                System.out.println("El numero menor es: "+nmenor);
+                break;
+            case 7:
+                System.out.println("Escogiste residuo");
+                String residuo = residuo(n1,n2);
+                System.out.println(residuo);
+
+        }
+
+
+    }
+    public static double SumaDosNumeros(double n1, double n2) {
+        double suma = n1+n2;
+        return suma;
+    }
+
+    public static  double RestaNum(double n1, double n2){
+        double resta = n1-n2;
+        return resta;
+    }
+
+    public static double Mult(double n1, double n2){
+        double multi = n1*n2;
+        return multi;
+    }
+
+    public static double Div(double n1, double n2){
+        double div = n1/n2;
+        return div;
+    }
+    public static double NM(double n1, double n2) {
+        double numeroMayor;
+        if (n1 > n2) {
+            numeroMayor = n1;
+        } else {
+           numeroMayor = n2;
+        }
+
+        return numeroMayor;
+    }
+    public static double nmenor(double n1, double n2){
+        double numMenor;
+        if(n1<n2){
+            numMenor = n1;
+        }else{
+            numMenor = n2;
+        }
+        return numMenor;
+
+    }
+    public static String residuo(double n1, double n2){
+        String residuo;
+
+        if(n1%n2 == 0){
+            residuo = "Sin residuo";
+        }else{
+            residuo = "con residuo";
+        }
+        return residuo;
+
+    }

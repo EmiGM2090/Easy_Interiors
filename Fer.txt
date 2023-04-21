@@ -1,3 +1,25 @@
 ¿Como se actuliza el proyecto local?
   git fetch origin main
   git merge origin/main
+
+¿Como subir cambios a mi rama desde git bash?
+
+ Paso 1: Actualizar proyecto locar desde mi rama
+  git fetch
+  git merge
+
+ Paso 2: Actualizar mi rama con la principar
+  git fetch origin main
+  git merge origin/main
+ 
+ Paso 3: 
+  Modifico, añado o elimino
+
+ Paso 4: Subir cambios a mi rama desde git bash
+  git status
+  git add
+  git commit -m ""
+  git push
+
+ Paso 5: Contribuir con mis cambios o mi rama
+  Pull request
