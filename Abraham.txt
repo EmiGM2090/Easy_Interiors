@@ -1,6 +1,11 @@
+Actualizar en mi rama: 
+git fetch
+git merge
 Actualizar proyecto local :
 git fetch origin main
 git merge origin/main
+modificar,añadir o eliminar
+
 <<<<<<< HEAD
 para subir cambios a la rama desde git bash se utilizan los sig comandos
 git status
