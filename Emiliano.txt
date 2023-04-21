@@ -1,9 +1,15 @@
-Como actualixar el proyecto local:
+Como actualizar el proyecto local:
+
+git fetch 
+git merge
+
+
+Actualizar mi rama con la principal
 
 git fetch origin main
 git merge origin/main
-<<<<<<< HEAD
 
+Modifico, añado o elimino
 
 Como subir cambios de mi rama desde git Bash
 
@@ -11,5 +17,3 @@ git status
 git add .
 git commit -m "Mensaje"
 git push
-=======
->>>>>>> refs/remotes/origin/EGM291004
