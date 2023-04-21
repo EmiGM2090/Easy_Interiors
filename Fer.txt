@@ -3,6 +3,10 @@
   git merge origin/main
 
 ¿Como subir cambios a mi rama desde git bash?
+  git fetch
+  git merge
+  git fetch origin main
+  git merge origin/main
   git status
   git add
   git commit -m ""
