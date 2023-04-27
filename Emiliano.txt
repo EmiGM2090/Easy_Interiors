@@ -1,19 +1,18 @@
-Como actualizar el proyecto local:
+Como actualizar el proyecto local con mi rama:
 
-git fetch 
-git merge
-
-
-Actualizar mi rama con la principal
-
-git fetch origin main
-git merge origin/main
+git fetch (Descargar los cambios de repositorio de Github a mi repositorio local)
+git merge (Combinar y actualizar los cambios descargados a mi repositorio local)
 
 
-Como subir cambios de mi rama desde git Bash
+Actualizar mi rama local con la principal
+
+git fetch origin main (Descargar los cambios que ya existen en la rama principal de Github a mi rama local)
+git merge origin/main (Combinar y actualizar los cambios descargados a mi rama local)
+
+
+Como subir cambios de mi rama desde git Bash:
 
 git status
 git add .
 git commit -m "Mensaje"
 git push
-
