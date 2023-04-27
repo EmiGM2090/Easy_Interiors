@@ -8,7 +8,7 @@
   git fetch
   git merge
 
- Paso 2: Actualizar mi rama con la principar
+ Paso 2: Actualizar mi rama con la principal
   git fetch origin main
   git merge origin/main
  
@@ -17,7 +17,7 @@
 
  Paso 4: Subir cambios a mi rama desde git bash
   git status
-  git add
+  git add .
   git commit -m ""
   git push
 
