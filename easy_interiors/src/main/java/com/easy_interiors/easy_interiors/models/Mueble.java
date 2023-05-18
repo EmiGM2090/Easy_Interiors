@@ -10,10 +10,11 @@ import lombok.ToString;
 @Entity    //Declarar clase como identidad
 @Table(name = "muebles")  //Especificar la tabla a la que hace referecia
 @ToString @EqualsAndHashCode // Darle el formato de salida a un texto
-public class Mueble {
+public class   Mueble {
     @Id  //escifico que habló de un id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //especifico que es autoincrementable
     @Getter @Setter @Column(name = "Id") //epecifico que mi propiedad tendrá getter y setters, y hace referencia a la columna id
+
     private Long Id; //declaro mi propiedad que se encuentra en la base de datos
 
     @Getter @Setter @Column(name = "Nombre")

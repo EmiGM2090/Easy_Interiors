@@ -4,9 +4,12 @@ import com.easy_interiors.easy_interiors.models.Decoracion;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
+@Transactional
 public class DecoracionDaoImp implements DecoracionDao{
 
     @PersistenceContext  //Voy a ultilizar SQL
@@ -15,7 +18,7 @@ public class DecoracionDaoImp implements DecoracionDao{
     @Override  //Especifico que mi metodo esta ejecutandose esperando interaccion
     @Transactional  //Especifico que mi metodo es una transaccion de datos
     public List<Decoracion> getDecoraciones() {  //Metodo que devuelve todos los usuarios en forma de lista
-        String query = "FROM Decoracion where 1";  //Guardo en texto una consulta SQL para mi BD, mi consulta selecciona todas las decoraciones
+        String query = "FROM Decoracion";  //Guardo en texto una consulta SQL para mi BD, mi consulta selecciona todas las decoraciones
         return entityManager.createQuery(query).getResultList();  //Retorno la respuesta de mi consulta de SQL
     }
 
