@@ -11,7 +11,7 @@ import lombok.ToString;
 @Table(name = "decoraciones")  //Especificar la tabla a la que hace referencia
 @ToString @EqualsAndHashCode //Darle formato de salida a una consulta en forma de texto
 
-public class Decoracion {
+public class  Decoracion {
     @Id  //Especifico que hablo de un Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)  //Especifico que es autoincrementable
     @Getter @Setter @Column(name = "Id")  //Especifico que mi propiedad tendra Getters y Setters, y hace referencia a la columna Id
@@ -23,7 +23,7 @@ public class Decoracion {
     @Getter @Setter @Column(name = "Dimensiones")
     private String Dimenciones;
 
-    @Getter @Setter @Column(name = "TipoHabitacion")
+    @Getter @Setter @Column(name = "Tipohabitacion")
     private String TipoHabitacion;
 
     @Getter @Setter @Column(name = "Color")
