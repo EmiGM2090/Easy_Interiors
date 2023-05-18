@@ -10,7 +10,7 @@ public interface DecoracionDao {
 
     Decoracion getDecoracion(Long Id);  //Especifico que debe existir el metodo "getDecoracion" y recibe un parametro llamado Id
 
-    void setDecoracion(Decoracion decoracion);  //Especofico que debe existir el metodo "setDecoracion" y recibe un parametro tipo Decoracion de nombre decoracion
+    void setDecoracion(Decoracion decoracion);  //Especifico que debe existir el metodo "setDecoracion" y recibe un parametro tipo Decoracion de nombre decoracion
 
 
 }
