@@ -22,7 +22,7 @@ public class Mueble {
     @Getter @Setter @Column(name = "Dimensiones")
     private String Dimensiones;
 
-    @Getter @Setter @Column(name = "Tipo Habitación")
+    @Getter @Setter @Column(name = "Tipohabitacion")
     private String TipoHabitacion;
 
     @Getter @Setter @Column(name = "Color")
