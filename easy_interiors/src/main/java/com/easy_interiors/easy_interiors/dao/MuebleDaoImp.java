@@ -33,5 +33,7 @@ public class MuebleDaoImp implements MuebleDao {
     public void setMueble(Mueble mueble) { //Metodo que resive un mueble y lo añade a la tabla muebles
         entityManager.merge(mueble); //Instruccion que une a la base de datos el mueble que recibe el metodo
 
+
+
     }
 }
