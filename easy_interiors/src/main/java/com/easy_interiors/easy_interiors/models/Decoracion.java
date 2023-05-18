@@ -21,7 +21,7 @@ public class Decoracion {
     private String Nombre;
 
     @Getter @Setter @Column(name = "Dimensiones")
-    private String Dimenciones;
+    private String Dimensiones;
 
     @Getter @Setter @Column(name = "TipoHabitacion")
     private String TipoHabitacion;
