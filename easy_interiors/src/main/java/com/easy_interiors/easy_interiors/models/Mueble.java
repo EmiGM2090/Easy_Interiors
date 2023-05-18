@@ -14,7 +14,7 @@ public class   Mueble {
     @Id  //escifico que habló de un id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //especifico que es autoincrementable
     @Getter @Setter @Column(name = "id") //epecifico que mi propiedad tendrá getter y setters, y hace referencia a la columna id
-    private Long id; //declaro mi propiedad que se encuentra en la base de datos
+    private Long Id; //declaro mi propiedad que se encuentra en la base de datos
 
     @Getter @Setter @Column(name = "Nombre")
     private String Nombre;
