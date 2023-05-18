@@ -26,11 +26,11 @@ public class DecoracionDaoImp implements DecoracionDao{
     @Transactional
     public Decoracion getDecoracion(Long Id) {  //Metodo que devuelve una decoracion segun el id
         String query = "FROM Decoracion WHERE Id = "+ Id;  //Guardo en texto una consulta SQL para mi BD, mi consulta selecciona una decoracion segun el id
-        return entityManager.createQuery(query, Decoracion.class).getSingleResult();  //Retorna la rspuesta de mi consulta SQL(query)
+        return entityManager.createQuery(query, Decoracion.class).getSingleResult();  //Retorna la respuesta de mi consulta SQL(query)
     }
 
     @Override
-    public void setDecoracion(Decoracion decoracion) {  //Metodo que añade un usuario a la tabla decoraciones
+    public void setDecoracion(Decoracion decoracion) {  //Metodo que añade una decoracion a la tabla decoraciones
         entityManager.merge(decoracion);  //Instruccion que une a la base de datos la decoracion que recibe el metodo
     }
 }
