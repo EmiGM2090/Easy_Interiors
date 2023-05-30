@@ -19,7 +19,7 @@ public class DecoracionController {
 
     }
 
-    @RequestMapping(value = "control/administracion/decoracion/{id}")
+    @RequestMapping(value = "control/administracion/decoracion/{id}", method = RequestMethod.GET)
     public Decoracion getDecoracion(@PathVariable Long id){
         return decoracionDao.getDecoracion(id);
     }

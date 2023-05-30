@@ -1,12 +1,10 @@
 package com.easy_interiors.easy_interiors.controllers;
 
 import com.easy_interiors.easy_interiors.dao.MuebleDao;
+import com.easy_interiors.easy_interiors.models.Habitacion;
 import com.easy_interiors.easy_interiors.models.Mueble;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,10 +17,24 @@ public class MuebleController {
     public List<Mueble> getMuebles(){
         return muebleDao.getMuebles();
     }
-    @RequestMapping(value = "control/administracion/mueble/{Id}")
+
+    @RequestMapping(value = "control/administracion/muebles2", method = RequestMethod.GET)
+    public List<Mueble> getMuebles2(){
+        return muebleDao.getMuebles2();
+    }
+
+
+    @RequestMapping(value = "control/administracion/mueble/{Id}", method = RequestMethod.GET)
     public Mueble getMueble (@PathVariable Long Id){
         return muebleDao.getMueble(Id);
     }
+
+    @RequestMapping(value = "control/administracion/mueblesFiltrados", method = RequestMethod.POST)
+    public List<Mueble> getMueblesFiltrados(@RequestBody Habitacion habitacion){
+        return muebleDao.getMueblesFiltrados(habitacion);
+    }
+
+
 
 
 }
