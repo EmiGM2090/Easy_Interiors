@@ -31,5 +31,8 @@ public class   Mueble {
 
     @Getter @Setter @Column(name = "Precio")
     private double Precio;
+
+    @Getter @Setter @Column(name = "urlimage")
+    private String urlImage;
 }
 
